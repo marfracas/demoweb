@@ -1,0 +1,47 @@
+<html>
+<head>
+<title> AITANA OCAÑA </title>
+<link href="estilosweb.css" rel="stylesheet" type="text/css">
+<Script Language="JavaScript">
+function DameLaFechaHora() {
+var hora = new Date()
+var hrs = hora.getHours();
+var min = hora.getMinutes();
+var hoy = new Date();
+var m = new Array();
+var d = new Array()
+var an= hoy.getYear();
+m[0]="Enero"; m[1]="Febrero"; m[2]="Marzo";
+m[3]="Abril"; m[4]="Mayo"; m[5]="Junio";
+m[6]="Julio"; m[7]="Agosto"; m[8]="Septiembre";
+m[9]="Octubre"; m[10]="Noviembre"; m[11]="Diciembre";
+if (min<10){
+document.write("Son las "+hrs+":0"+min+" (");
+document.write(hoy.getDate());
+document.write(" de ");
+document.write(m[hoy.getMonth()]);
+document.write(")");
+}
+else{
+document.write("Son las "+hrs+":"+min+" (");
+document.write(hoy.getDate());
+document.write(" de ");
+document.write(m[hoy.getMonth()]);
+document.write(")");
+}
+}
+</Script>
+<style>
+    body {
+        margin: 0;
+    }
+</style>
+</head>
+<body>
+<img style="align-self: center;" src="https://image.europafm.com/clipping/cmsimages02/2022/05/31/5CEA4C54-EB31-4EBF-9F99-BBBF6A3CDB09/pistas-que-confirmarian-que-aitana-sacara-version-castellano-farfalle-sangiovanni-quinta-san-remo_69.jpg?crop=1920,1080,x0,y0&width=1280&height=720&optimize=low&format=jpg" width="1325" height="600">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBnB5Jz1Zh4tLg3MbFvaCoxzcZLATQT0UhsA&usqp=CAU">
+<a href="pagina3.html" class="indice4"> Contacto </a>
+<a href="pagina2.html" class="indice3"> Discos </a>
+<a href="pagina1.html" class="indice2"> Serie</a>
+<a href="index.html" class="indice1"> Inicio y sus éxitos </a>
+<br><br><br><br>
